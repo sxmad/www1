@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www1.app</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            overflow: hidden;
+            background: linear-gradient(45deg, #ff0066, #6600ff);
+            animation: gradientChange 10s infinite;
+        }
+
+        h1 {
+            font-size: 4em;
+            color: white;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+            border: 5px solid white;
+            padding: 20px 40px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: textGlow 2s infinite alternate;
+        }
+
+        /* Background gradient animation */
+        @keyframes gradientChange {
+            0%, 100% {
+                background: linear-gradient(45deg, #ff0066, #6600ff);
+            }
+            25% {
+                background: linear-gradient(45deg, #6600ff, #ff0066);
+            }
+            50% {
+                background: linear-gradient(45deg, #ffcc00, #ff6600);
+            }
+            75% {
+                background: linear-gradient(45deg, #ff6600, #ffcc00);
+            }
+        }
+
+        @keyframes textGlow {
+            0%, 100% {
+                color: white;
+                text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+            }
+            50% {
+                color: #ff0066;
+                text-shadow: 3px 3px 20px rgba(255,0,102,0.8);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>www1.app.com</h1>
+    </center>
+</body>
+</html>
